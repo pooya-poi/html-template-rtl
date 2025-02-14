@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <!-- <link href="./bootstrap.css" rel="stylesheet" /> -->
+    <link href="./style/bootstrap.css" rel="stylesheet" />
+    <link href="./swiperjs/swiper.css" rel="stylesheet" />
+    <link href="./custom-style.css" rel="stylesheet" />
+  </head>
+  <body dir="rtl">
+    <!-- header -->
+    <div class="header-1">
+      <div class="container d-none d-md-block">
+        <div class="header-1-top d-flex justify-content-between pt-4">
+          <div class="logo"><img src="./images/icon.png" alt="" /></div>
+          <div class="search">
+            <form action="" class="">
+              <div class="search-form position-relative">
+                <input type="text" placeholder="جستوجو..." />
+                <button type="submit">
+                  <img src="./images/search.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="lang">
+            <img src="./images/lang.svg" alt="" />
+          </div>
+        </div>
+        <nav class="d-flex">
+          <div class="quick-access">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    width="13"
+                    src="./images/quick-access.svg"
+                    alt=""
+                  />دسترسی سریع</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="main-menu">
+            <ul>
+              <li>
+                <a href="#">لینک یک</a>
+                <span class="dropdown-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="10.464"
+                    viewBox="0 0 17.362 10.464"
+                  >
+                    <path
+                      id="icons8_expand_arrow"
+                      d="M9.682,12.953l6.342-6.212a.724.724,0,0,1,1.017.006l1.111,1.111a.724.724,0,0,1,0,1.026l-7.955,7.9a.723.723,0,0,1-1.023,0l-7.955-7.9a.724.724,0,0,1,0-1.026L2.323,6.747A.724.724,0,0,1,3.34,6.742Z"
+                      transform="translate(-1 -6.536)"
+                      fill="#334155"
+                    />
+                  </svg>
+                </span>
+                <ul>
+                  <li><a href="#">زیرلینک یک</a></li>
+                  <li><a href="#">زیرلینک دو</a></li>
+                  <li>
+                    <a href="#">زیرلینک سه</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">لینک دو</a></li>
+              <li><a href="#">لینک سه</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile nav -->
+      <div
+        class="header-1-mobile d-flex justify-content-between py-3 px-3 align-items-center d-md-none"
+      >
+        <div class="logo-mobile">
+          <img src="./images/icon.png" alt="" />
+        </div>
+        <div class="hamburger-mobile">
+          <button
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenuOffcanvas"
+            aria-controls="mobileMenuOffcanvas"
+          >
+            <img src="./images/menu.svg" alt="" />
+          </button>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="mobileMenuOffcanvas"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-body mobile-menu-body">
+            <div class="d-flex justify-content-center">
+              <img width="100" src="./images/icon.png" alt="" />
+            </div>
+            <div class="">
+              <form action="" class="mobile-menu-search-form">
+                <input type="text" placeholder="جستوجو" />
+                <img src="./images/search.svg" alt="" />
+              </form>
+            </div>
+            <ul>
+              <li><a href="">یک</a></li>
+              <li>
+                <a href="">یک</a>
+                <ul class="sub-menu">
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">یک</a>
+                <ul class="sub-menu">
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="mobile-menu-social">
+              <div class="d-flex flex-wrap justify-content-center">
+                <a href=""><img src="./images/telegram_app.svg" alt="" /></a>
+                <a href=""><img src="./images/instagram_1.svg" alt="" /></a>
+                <a href=""><img src="./images/aparat.svg" alt="" /></a>
+                <a href=""><img src="./images/twitter.svg" alt="" /></a>
+                <a href=""><img src="./images/youtube.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="single-post">
+            <div class="thumb"><img  src="./images/image.png" alt="" /></div>
+            <h1 class="post-title">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است
+            </h1>
+            <div class="post-meta d-flex flex-wrap  align-items-baseline">
+              <div class="d-flex post-category">
+				<!-- <img style="margin: -15px 3px 0px 3px;" src="./images/category.svg" alt=""> -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 42 40.19">
+					<g id="category" transform="translate(-6 -11)">
+					  <path id="Path_122" data-name="Path 122" d="M19,50.207V17.621A3.631,3.631,0,0,1,22.621,14H47.966a7.263,7.263,0,0,1,7.241,7.241V50.207a1.793,1.793,0,0,1-1.81,1.81H20.81A1.793,1.793,0,0,1,19,50.207Z" transform="translate(-8.293 -1.914)" fill="#fff"/>
+					  <path id="Path_123" data-name="Path 123" d="M106.241,21.241h-3.621A3.631,3.631,0,0,1,99,17.621V14h0a7.263,7.263,0,0,1,7.241,7.241Z" transform="translate(-59.328 -1.914)" fill="#fff"/>
+					  <path id="Path_124" data-name="Path 124" d="M54.379,19.328v-.145A8.284,8.284,0,0,0,46.052,11H20.707A4.7,4.7,0,0,0,16,15.707v2.534a1.086,1.086,0,1,0,2.172,0V15.707a2.519,2.519,0,0,1,2.534-2.534H44.966v2.534a4.7,4.7,0,0,0,4.707,4.707h3.621a1.179,1.179,0,0,0,1.014-.652A1.817,1.817,0,0,0,54.379,19.328Zm-7.241-3.621V13.281a6.138,6.138,0,0,1,4.96,4.96H49.672A2.519,2.519,0,0,1,47.138,15.707Z" transform="translate(-6.379)" fill="#444b54"/>
+					  <path id="Path_125" data-name="Path 125" d="M42.2,48.707H30.072a6.037,6.037,0,0,1-4.779-2.353h0A6.037,6.037,0,0,0,20.514,44h-9.7A1.793,1.793,0,0,0,9,45.81V69.345a1.793,1.793,0,0,0,1.81,1.81h33.2V50.517A1.816,1.816,0,0,0,42.2,48.707Z" transform="translate(-1.914 -21.052)" fill="#fff"/>
+					  <path id="Path_126" data-name="Path 126" d="M39,110.81a1.793,1.793,0,0,0,1.81,1.81H63.15V109H40.81A1.793,1.793,0,0,0,39,110.81Z" transform="translate(-21.052 -62.517)" fill="#fe1f4c"/>
+					  <path id="Path_127" data-name="Path 127" d="M48,45.6V43.172a1.067,1.067,0,0,0-1.086-1.086h0a1.089,1.089,0,0,0-1.086,1.086V66.816a1.34,1.34,0,1,1-2.679,0V48.6a2.905,2.905,0,0,0-2.9-2.9H28.159a4.958,4.958,0,0,1-3.91-1.919A7.171,7.171,0,0,0,18.6,41H8.9A2.905,2.905,0,0,0,6,43.9V67.431a2.905,2.905,0,0,0,2.9,2.9H44.488A3.515,3.515,0,0,0,48,66.816V45.6ZM8.9,68.155a.726.726,0,0,1-.724-.724V43.9a.726.726,0,0,1,.724-.724h9.7a4.958,4.958,0,0,1,3.91,1.919,7.171,7.171,0,0,0,5.648,2.788H40.288a.726.726,0,0,1,.724.724V66.816a4.186,4.186,0,0,0,.253,1.34Z" transform="translate(0 -19.138)" fill="#444b54"/>
+					</g>
+				  </svg>
+				  
+                <ul>
+                  <li><a href="#">دسته اول,</a></li>
+                  <li><a href="#">دسته اول,</a></li>
+                  <li><a href="#">دسته اول</a></li>
+                </ul>
+              </div>
+              <div class="post-date">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 34.441 37.41">
+					<g id="calendar" transform="translate(-6 -1)">
+					  <path id="Path_135" data-name="Path 135" d="M38.691,14a2.978,2.978,0,0,1,2.969,2.969V43.691a2.978,2.978,0,0,1-2.969,2.969H11.969A2.978,2.978,0,0,1,9,43.691V16.969A2.978,2.978,0,0,1,11.969,14Z" transform="translate(-2.109 -9.14)" fill="#fff"/>
+					  <path id="Path_136" data-name="Path 136" d="M42.829,28.019H38.375a.875.875,0,0,1-.8-.5.864.864,0,0,1,.089-.92l2.227-2.969a10.4,10.4,0,0,0,2.049-6.146,1.336,1.336,0,1,0-2.672,0v1.93a.891.891,0,1,1-1.781,0v-1.93a3.118,3.118,0,1,1,6.235,0,12.174,12.174,0,0,1-2.4,7.215l-1.158,1.544h2.672a.891.891,0,1,1,0,1.781ZM38.375,8.72A2.382,2.382,0,0,1,36,6.344V3.375a2.375,2.375,0,0,1,4.751,0v.594h6.532a.891.891,0,0,1,0,1.781H39.86a.875.875,0,0,1-.891-.891V3.375a.594.594,0,0,0-1.188,0V6.344a.6.6,0,0,0,.594.594.891.891,0,1,1,0,1.781Z" transform="translate(-21.093)" fill="#444b54"/>
+					  <path id="Path_137" data-name="Path 137" d="M36.581,38.41H9.86A3.852,3.852,0,0,1,6,34.551V7.829a3.852,3.852,0,0,1,3.86-3.86h2.969a.891.891,0,1,1,0,1.781H9.86A2.066,2.066,0,0,0,7.781,7.829V34.551A2.066,2.066,0,0,0,9.86,36.629H36.581a2.066,2.066,0,0,0,2.078-2.078V7.829a2.066,2.066,0,0,0-2.078-2.078H32.128a.875.875,0,0,1-.891-.891V3.375a.594.594,0,1,0-1.188,0V6.344a.6.6,0,0,0,.594.594.891.891,0,1,1,0,1.781,2.382,2.382,0,0,1-2.375-2.375V3.375a2.375,2.375,0,0,1,4.751,0v.594h3.563a3.852,3.852,0,0,1,3.86,3.86V34.551A3.852,3.852,0,0,1,36.581,38.41Z" fill="#103a55"/>
+					  <path id="Path_138" data-name="Path 138" d="M69.118,59.658A3.117,3.117,0,0,1,66,56.54a.891.891,0,0,1,1.781,0,1.336,1.336,0,1,0,2.672,0V53.868a1.331,1.331,0,0,0-1.336-1.336H66.891A.875.875,0,0,1,66,51.641V46.891A.875.875,0,0,1,66.891,46h3.266a.891.891,0,1,1,0,1.781H67.781v2.969h1.336a3.117,3.117,0,0,1,3.118,3.118V56.54A3.117,3.117,0,0,1,69.118,59.658Z" transform="translate(-42.186 -31.639)" fill="#444b54"/>
+					</g>
+				  </svg>
+				  
+				1400/01/25
+				</div>
+              <div class="post-author">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 29.725 36.005">
+					<g id="user_male" transform="translate(-23.918 -21.9)">
+					  <path id="Path_128" data-name="Path 128" d="M49.185,42.46a8.528,8.528,0,0,1-17.057,0V32.3l17.057,2.039Zm5.228,20.728a15.837,15.837,0,0,0-13.757-8.009h0A15.837,15.837,0,0,0,26.9,63.188l.037,1.261H54.376Z" transform="translate(-1.876 -6.544)" fill="#fff"/>
+					  <path id="Path_129" data-name="Path 129" d="M25.024,57.756a1.046,1.046,0,0,1-.556-.148,1.126,1.126,0,0,1-.408-1.52,16.932,16.932,0,0,1,29.441,0A1.113,1.113,0,0,1,51.573,57.2a14.705,14.705,0,0,0-25.585,0A1.106,1.106,0,0,1,25.024,57.756Zm18.8-33.187-.148-.222A5.817,5.817,0,0,0,38.966,21.9H35.814a8.53,8.53,0,0,0-8.528,8.528h0A1.093,1.093,0,0,0,28.4,31.541h2c4.264,0,8.6,0,11.717-2.781V28.8a4.23,4.23,0,0,0,.408-.408,1.112,1.112,0,0,1,1.557-.111,1.131,1.131,0,0,1,.074,1.632l-.519.519a.958.958,0,0,0,.334,1.557h0a4.239,4.239,0,0,0,1.187.26,1.124,1.124,0,0,1,1,1.112v2.521a7.5,7.5,0,0,1-6.9,7.564,7.428,7.428,0,0,1-7.9-7.379,1.113,1.113,0,1,0-2.225-.037,9.647,9.647,0,0,0,19.282.482V29.724A5.181,5.181,0,0,0,43.823,24.57Z" fill="#103a55"/>
+					</g>
+				  </svg>
+				  
+				جان دوو
+			</div>
+            </div>
+            <div class="single-post-content">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <!-- section footer -->
+    <footer class="footer-1 pt-3">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center flex-md-row justify-content-between"
+        >
+          <div class="footer-1-logo">
+            <img src="./images/icon.png" alt="" />
+          </div>
+          <div class="footer-1-social mt-sm-3">
+            <a href="#"><img src="./images/aparat.svg" alt="" /></a>
+            <a href="#"><img src="./images/youtube.svg" alt="" /></a>
+            <a href="#"><img src="./images/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./images/telegram_app.svg" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+        </div>
+        <div class="d-flex namad-icons justify-content-center">
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+        </div>
+        <div class="footer-1-copy text-center">
+          <p class="m-0">کپی رایت این سایت متعلق به وبسایت قالب دی ام میباشد</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="./swiperjs/swiper.js"></script>
+    <script src="./template-script.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./bootstrap.bundle.js"></script>
+  </body>
+</html>

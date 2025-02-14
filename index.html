@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <!-- <link href="./bootstrap.css" rel="stylesheet" /> -->
+    <link href="./style/bootstrap.css" rel="stylesheet" />
+    <link href="./swiperjs/swiper.css" rel="stylesheet" />
+    <link href="./custom-style.css" rel="stylesheet" />
+  </head>
+  <body dir="rtl">
+    <!-- header -->
+    <div class="header-1">
+      <div class="container d-none d-md-block">
+        <div class="header-1-top d-flex justify-content-between pt-4">
+          <div class="logo"><img src="./images/icon.png" alt="" /></div>
+          <div class="search">
+            <form action="" class="">
+              <div class="search-form position-relative">
+                <input type="text" placeholder="جستوجو..." />
+                <button type="submit">
+                  <img src="./images/search.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="lang">
+            <img src="./images/lang.svg" alt="" />
+          </div>
+        </div>
+        <nav class="d-flex">
+          <div class="quick-access">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    width="13"
+                    src="./images/quick-access.svg"
+                    alt=""
+                  />دسترسی سریع</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="main-menu">
+            <ul>
+              <li>
+                <a href="#">لینک یک</a>
+                <span class="dropdown-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="10.464"
+                    viewBox="0 0 17.362 10.464"
+                  >
+                    <path
+                      id="icons8_expand_arrow"
+                      d="M9.682,12.953l6.342-6.212a.724.724,0,0,1,1.017.006l1.111,1.111a.724.724,0,0,1,0,1.026l-7.955,7.9a.723.723,0,0,1-1.023,0l-7.955-7.9a.724.724,0,0,1,0-1.026L2.323,6.747A.724.724,0,0,1,3.34,6.742Z"
+                      transform="translate(-1 -6.536)"
+                      fill="#334155"
+                    />
+                  </svg>
+                </span>
+                <ul>
+                  <li><a href="#">زیرلینک یک</a></li>
+                  <li><a href="#">زیرلینک دو</a></li>
+                  <li>
+                    <a href="#">زیرلینک سه</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">لینک دو</a></li>
+              <li><a href="#">لینک سه</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile nav -->
+      <div
+        class="header-1-mobile d-flex justify-content-between py-3 px-3 align-items-center d-md-none"
+      >
+        <div class="logo-mobile">
+          <img src="./images/icon.png" alt="" />
+        </div>
+        <div class="hamburger-mobile">
+          <button
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenuOffcanvas"
+            aria-controls="mobileMenuOffcanvas"
+          >
+            <img src="./images/menu.svg" alt="" />
+          </button>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="mobileMenuOffcanvas"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-body mobile-menu-body">
+            <div class="d-flex justify-content-center">
+              <img width="100" src="./images/icon.png" alt="" />
+            </div>
+            <div class="">
+              <form action="" class="mobile-menu-search-form">
+                <input type="text" placeholder="جستوجو" />
+                <img src="./images/search.svg" alt="" />
+              </form>
+            </div>
+            <ul>
+              <li><a href="">یک</a></li>
+              <li>
+                <a href="">یک</a>
+                <ul class="sub-menu">
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">یک</a>
+                <ul class="sub-menu">
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                  <li><a href="">زیر یک</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="mobile-menu-social">
+              <div class="d-flex flex-wrap justify-content-center">
+                <a href=""><img src="./images/telegram_app.svg" alt="" /></a>
+                <a href=""><img src="./images/instagram_1.svg" alt="" /></a>
+                <a href=""><img src="./images/aparat.svg" alt="" /></a>
+                <a href=""><img src="./images/twitter.svg" alt="" /></a>
+                <a href=""><img src="./images/youtube.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center flex-lg-row">
+          <div class="mt-5 text-center">
+            <h2 class="text-right">شرکت دیجیتال مارکت</h2>
+            <p>
+              ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+              چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+              روزنامه
+            </p>
+            <a class="btn-1" href="">دکمه</a>
+          </div>
+          <div class=""><img src="./images/hero-img.svg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- section Services -->
+    <section class="service">
+      <div class="container">
+        <div class="service-top-text">
+          <h2>خدماتی که ما ارائه می‌دهیم</h2>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="service-card">
+              <div class="card-icon">
+                <img width="100" src="./images/confetti.svg" alt="" />
+              </div>
+              <div class="card-title">
+                <h3>ایده پردازی</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و .سطرآنچنان که لازم است
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="service-card">
+              <div class="card-icon">
+                <img width="100" src="./images/cup.svg" alt="" />
+              </div>
+              <div class="card-title">
+                <h3>ایده پردازی</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و .سطرآنچنان که لازم است
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="service-card">
+              <div class="card-icon">
+                <img width="100" src="./images/wi-fi.svg" alt="" />
+              </div>
+              <div class="card-title">
+                <h3>ایده پردازی</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و .سطرآنچنان که لازم است
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="service-card">
+              <div class="card-icon">
+                <img width="100" src="./images/confetti.svg" alt="" />
+              </div>
+              <div class="card-title">
+                <h3>ایده پردازی</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و .سطرآنچنان که لازم است
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="service-card">
+              <div class="card-icon">
+                <img width="100" src="./images/confetti.svg" alt="" />
+              </div>
+              <div class="card-title">
+                <h3>ایده پردازی</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و .سطرآنچنان که لازم است
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section info card -->
+    <section class="info-section mt-5">
+      <div class="container">
+        <img class="bullet-under-section" src="./images/bulltes.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="d-flex flex-column align-items-center">
+          <div class="info-section-top">
+            <!-- <img  src="./images/image.png" alt="" /> -->
+            <div class="overlay-gradient"></div>
+            <div class="overlay-blur"></div>
+            <div class="info-section-top-text position-absolute">
+              <div
+                class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-between px-5 py-5"
+              >
+                <div class="info-section-top-title">
+                  <h3>شرکت دیجیتال مارکت</h3>
+                </div>
+                <span><img src="./images/white_red_hat.svg" alt="" /></span>
+              </div>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </p>
+            </div>
+          </div>
+          <div class="info-section-bottom">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex mt-2">
+                <div class="the-icon">
+                  <img src="./images/open_box.svg" alt="" />
+                </div>
+                <div class="">
+                  <h3>فعالیت جهانی</h3>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex mt-2">
+                <div class="the-icon">
+                  <img src="./images/open_box.svg" alt="" />
+                </div>
+                <div class="">
+                  <h3>فعالیت جهانی</h3>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section videos -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="row-title d-flex align-items-center">
+            <img src="./images/circled_play.svg" alt="" />
+            <h3 class="me-2">ویدیوها</h3>
+          </div>
+          <hr />
+          <div class="row-divider"></div>
+          <div class="row-btn">
+            <a href="#" class="btn-1">مشاهده همه</a>
+          </div>
+        </div>
+
+        <div class="videos">
+          <div class="d-flex flex-column flex-md-row video-box">
+            <a
+              class="video-item mt-3 active-video"
+              href="#"
+              style="background-image: url(./images/image.png)"
+            >
+              <div class="video-overlay-gradient"></div>
+              <div class="video-overlay-blur"></div>
+              <div class="video-overlay-title">
+                <h3>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </h3>
+              </div>
+              <div class="video-overlay-icon">
+                <img src="./images/circled_play.svg" alt="" />
+              </div>
+            </a>
+            <a
+              class="video-item mt-3"
+              href="#"
+              style="background-image: url(./images/image.png)"
+            >
+              <div class="video-overlay-gradient"></div>
+              <div class="video-overlay-blur"></div>
+              <div class="video-overlay-title">
+                <h3>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </h3>
+              </div>
+              <div class="video-overlay-icon">
+                <img src="./images/circled_play.svg" alt="" />
+              </div>
+            </a>
+            <a
+              class="video-item mt-3"
+              href="#"
+              style="background-image: url(./images/image.png)"
+            >
+              <div class="video-overlay-gradient"></div>
+              <div class="video-overlay-blur"></div>
+              <div class="video-overlay-title">
+                <h3>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </h3>
+              </div>
+              <div class="video-overlay-icon">
+                <img src="./images/circled_play.svg" alt="" />
+              </div>
+            </a>
+            <a
+              class="video-item mt-3"
+              href="#"
+              style="background-image: url(./images/image.png)"
+            >
+              <div class="video-overlay-gradient"></div>
+              <div class="video-overlay-blur"></div>
+              <div class="video-overlay-title">
+                <h3>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </h3>
+              </div>
+              <div class="video-overlay-icon">
+                <img src="./images/circled_play.svg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section posts -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="row-title d-flex align-items-center">
+            <img src="./images/posts.svg" alt="" />
+            <h3 class="me-2">آخرین نوشته ها</h3>
+          </div>
+
+          <!-- <div class="row-divider"></div> -->
+          <div class="row-btn">
+            <a href="#" class="btn-1">مشاهده همه</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="post-card">
+              <a href="">
+                <img src="./images/image.png" alt="" />
+                <div class="post-title">
+                  <h3>ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+                </div>
+                <div class="post-excerpt">
+                  <p>
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از . صنعت چاپ و با
+                    استفاده از طراحان گرافیک است ...چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون
+                  </p>
+                </div>
+                <div class="post-meta d-flex justify-content-between">
+                  <span class="d-flex">
+                    <img class="ms-2" src="./images/eye.svg" alt="" />200</span
+                  >
+                  <span>نویسنده: جان دوو</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="post-card">
+              <a href="">
+                <img src="./images/image.png" alt="" />
+                <div class="post-title">
+                  <h3>ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+                </div>
+                <div class="post-excerpt">
+                  <p>
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از . صنعت چاپ و با
+                    استفاده از طراحان گرافیک است ...چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون
+                  </p>
+                </div>
+                <div class="post-meta d-flex justify-content-between">
+                  <span class="d-flex">
+                    <img class="ms-2" src="./images/eye.svg" alt="" />200</span
+                  >
+                  <span>نویسنده: جان دوو</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="post-card">
+              <a href="">
+                <img src="./images/image.png" alt="" />
+                <div class="post-title">
+                  <h3>ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+                </div>
+                <div class="post-excerpt">
+                  <p>
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از . صنعت چاپ و با
+                    استفاده از طراحان گرافیک است ...چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون
+                  </p>
+                </div>
+                <div class="post-meta d-flex justify-content-between">
+                  <span class="d-flex">
+                    <img class="ms-2" src="./images/eye.svg" alt="" />200</span
+                  >
+                  <span>نویسنده: جان دوو</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="post-card">
+              <a href="">
+                <img src="./images/image.png" alt="" />
+                <div class="post-title">
+                  <h3>ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+                </div>
+                <div class="post-excerpt">
+                  <p>
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از . صنعت چاپ و با
+                    استفاده از طراحان گرافیک است ...چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون
+                  </p>
+                </div>
+                <div class="post-meta d-flex justify-content-between">
+                  <span class="d-flex">
+                    <img class="ms-2" src="./images/eye.svg" alt="" />200</span
+                  >
+                  <span>نویسنده: جان دوو</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="post-card">
+              <a href="">
+                <img src="./images/image.png" alt="" />
+                <div class="post-title">
+                  <h3>ایپسوم متن ساختگی با تولید سادگی نامفهوم</h3>
+                </div>
+                <div class="post-excerpt">
+                  <p>
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از . صنعت چاپ و با
+                    استفاده از طراحان گرافیک است ...چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون
+                  </p>
+                </div>
+                <div class="post-meta d-flex justify-content-between">
+                  <span class="d-flex">
+                    <img class="ms-2" src="./images/eye.svg" alt="" />200</span
+                  >
+                  <span>نویسنده: جان دوو</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section Testimonial -->
+    <section class="tesimonial">
+      <div class="container">
+        <img class="bullet-under-section" src="./images/bulltes.svg" alt="" />
+      </div>
+
+      <div class="container testimonial-carousel mt-5">
+        <!-- <div class="blob">
+          <img src="./images/blob(5).svg" alt="">
+        
+        </div> -->
+        <div class="d-flex flex-column align-items-center mt-3 pt-3">
+          <h3>نظرات مشتریان</h3>
+          <img src="./images/customers.svg" alt="" />
+        </div>
+
+        <div class="swiper mySwiper testimonial-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/image.png" alt="" />
+              </div>
+              <div class="name d-flex flex-column">
+                جان دوو
+                <span class="subtitle">مدیرعامل</span>
+              </div>
+              <div class="text">
+                <p>
+                  ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                  بلکه روزنامه
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/image.png" alt="" />
+              </div>
+              <div class="name d-flex flex-column">
+                جان دوو
+                <span class="subtitle">مدیرعامل</span>
+              </div>
+              <div class="text">
+                <p>
+                  ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                  بلکه روزنامه
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="./images/image.png" alt="" />
+              </div>
+              <div class="name d-flex flex-column">
+                جان دوو
+                <span class="subtitle">مدیرعامل</span>
+              </div>
+              <div class="text">
+                <p>
+                  ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                  بلکه روزنامه
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <img src="./images/prev_slide.svg" alt="" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./images/next_slide.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="text-center">
+          <h3>
+            <img src="./images/faq.svg" alt="" />
+            سوالات متداول
+          </h3>
+        </div>
+
+        <div class="accordion accordion-dm" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item my-2">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                سوال اول
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item my-2">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                سوال دوم
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <!-- Section pricing -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="price-card">
+              <img src="./images/money_bag.svg" alt="" />
+              <h3 class="price-card-title">استاندارد</h3>
+              <span>100.000 تومان</span>
+              <ul>
+                <li>فضا: 10گیگابایت</li>
+                <li>ترافیک: 300 گیگابایت</li>
+                <li>میزبانی در دیتاسنتر های مطرح</li>
+                <li>نوع میزبانی: تمام ابری</li>
+              </ul>
+              <a href="#" class="btn-1">مشاوره</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="price-card active-price">
+              <img src="./images/money_bag.svg" alt="" />
+              <h3 class="price-card-title">استاندارد</h3>
+              <span>100.000 تومان</span>
+              <ul>
+                <li>فضا: 10گیگابایت</li>
+                <li>ترافیک: 300 گیگابایت</li>
+                <li>میزبانی در دیتاسنتر های مطرح</li>
+                <li>نوع میزبانی: تمام ابری</li>
+              </ul>
+              <a href="#" class="btn-1">مشاوره</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4">
+            <div class="price-card">
+              <img src="./images/money_bag.svg" alt="" />
+              <h3 class="price-card-title">استاندارد</h3>
+              <span>100.000 تومان</span>
+              <ul>
+                <li>فضا: 10گیگابایت</li>
+                <li>ترافیک: 300 گیگابایت</li>
+                <li>میزبانی در دیتاسنتر های مطرح</li>
+                <li>نوع میزبانی: تمام ابری</li>
+              </ul>
+              <a href="#" class="btn-1">مشاوره</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section our team -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row text-center">
+          <h3>اعضای ما</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <div class="team-card">
+              <img src="./images/team_user.svg" alt="" />
+              <h4 class="mt-2">جان دوو</h4>
+              <span>متخصص دیجیتال مارکتینگ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section portfolio slider -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row text-center">
+          <h3>نمونه کارها</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="swiper myPortfolioSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section social links -->
+    <div class="container social-link my-3">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-around align-items-center"
+      >
+        <img width="100" src="./images/instagram.svg" alt="" />
+        <p class="px-2">
+          ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        </p>
+        <a href="#" class="btn-1">لینک</a>
+      </div>
+    </div>
+
+    <div class="container social-link my-3">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-around align-items-center"
+      >
+        <img width="100" src="./images/phone_message.svg" alt="" />
+        <p class="px-2">
+          ارائه کلیه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        </p>
+        <a href="#" class="btn-1">تماس</a>
+      </div>
+    </div>
+
+    <!-- section footer -->
+    <footer class="footer-1 pt-3">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center flex-md-row justify-content-between"
+        >
+          <div class="footer-1-logo">
+            <img src="./images/icon.png" alt="" />
+          </div>
+          <div class="footer-1-social mt-sm-3">
+            <a href="#"><img src="./images/aparat.svg" alt="" /></a>
+            <a href="#"><img src="./images/youtube.svg" alt="" /></a>
+            <a href="#"><img src="./images/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./images/telegram_app.svg" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="color-red">درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+        </div>
+        <div class="d-flex namad-icons justify-content-center">
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+          <a href=""><img src="images/aparat.svg" alt="" /></a>
+        </div>
+        <div class="footer-1-copy text-center">
+          <p class="m-0">کپی رایت این سایت متعلق به وبسایت قالب دی ام میباشد</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="./swiperjs/swiper.js"></script>
+    <script src="./template-script.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./bootstrap.bundle.js"></script>
+  </body>
+</html>

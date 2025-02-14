@@ -1,0 +1,15 @@
+{
+  "name": "dm-template",
+  "version": "1.0.0",
+  "description": "bootstrap template",
+  "main": "bootstrap.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/bootstrap.scss ./style/bootstrap.css --output-style compressed --source-map-embed true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
